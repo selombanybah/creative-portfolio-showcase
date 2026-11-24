@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mara Voss — Résumé</title>
+    <meta
+      name="description"
+      content="Résumé for Mara Voss, multidisciplinary designer and art director based in Portland, OR."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #14161a;
+        --muted: #5b6169;
+        --line: #d8dadd;
+        --accent: #a9c22e;
+        --paper: #fbfbf8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 40px 20px 72px;
+        background: #ececea;
+        color: var(--ink);
+        font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      .sheet {
+        max-width: 820px;
+        margin: 0 auto;
+        background: var(--paper);
+        padding: 52px 56px 60px;
+        border: 1px solid var(--line);
+        box-shadow: 0 18px 50px -30px rgba(0, 0, 0, 0.5);
+      }
+      .top {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 18px;
+      }
+      h1 {
+        font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        margin: 0 0 8px;
+      }
+      .role {
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .contact {
+        text-align: right;
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.9;
+      }
+      .contact a {
+        color: var(--ink);
+        text-decoration: none;
+        border-bottom: 1px solid var(--accent);
+      }
+      h2 {
+        font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin: 34px 0 14px;
+        color: var(--muted);
+      }
+      .summary {
+        margin: 22px 0 0;
+        font-size: 16px;
+        max-width: 62ch;
+      }
+      .entry {
+        display: grid;
+        grid-template-columns: 132px 1fr;
+        gap: 20px;
+        padding: 12px 0;
+        border-top: 1px solid var(--line);
+      }
+      .entry:first-of-type {
+        border-top: none;
+      }
+      .when {
+        font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+        padding-top: 3px;
+      }
+      .entry h3 {
+        margin: 0 0 2px;
+        font-size: 16px;
+        font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+      }
+      .entry p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+      }
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      li {
+        margin-bottom: 4px;
+        font-size: 14px;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 4px;
+      }
+      .chip {
+        font-size: 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 3px 10px;
+        color: var(--muted);
+      }
+      .print {
+        display: block;
+        margin: 28px auto 0;
+        max-width: 820px;
+        text-align: center;
+      }
+      .print button {
+        font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        background: var(--ink);
+        color: var(--paper);
+        border: 0;
+        border-radius: 999px;
+        padding: 12px 24px;
+        cursor: pointer;
+      }
+      .print button:hover {
+        background: #2a2e34;
+      }
+      footer {
+        margin-top: 34px;
+        border-top: 1px solid var(--line);
+        padding-top: 14px;
+        font-size: 12px;
+        color: var(--muted);
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 640px) {
+        body {
+          padding: 0;
+        }
+        .sheet {
+          padding: 32px 22px 40px;
+          border: 0;
+          box-shadow: none;
+        }
+        .contact {
+          text-align: left;
+        }
+        .entry {
+          grid-template-columns: 1fr;
+          gap: 4px;
+        }
+        .cols {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+        h1 {
+          font-size: 32px;
+        }
+      }
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+          font-size: 12px;
+        }
+        .sheet {
+          border: 0;
+          box-shadow: none;
+          padding: 0;
+          max-width: none;
+        }
+        .print {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <header class="top">
+        <div>
+          <h1>Mara Voss</h1>
+          <p class="role">Designer &amp; Art Director</p>
+        </div>
+        <div class="contact">
+          <a href="mailto:hello@maravoss.studio">hello@maravoss.studio</a><br />
+          Portland, OR · PST<br />
+          maravoss.studio
+        </div>
+      </header>
+
+      <p class="summary">
+        Multidisciplinary designer and art director with nine years across brand identity, digital
+        product and motion. Independent since 2016, working with food, culture and data companies.
+        Builds systems teams can run without a designer in the room.
+      </p>
+
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="when">2016 — Present</div>
+        <div>
+          <h3>Independent designer &amp; art director</h3>
+          <p>
+            Portland, OR. Identity and product work for Terra Goods Co-op, Atlas Analytics, Kiln &amp;
+            Co. Ceramics, Meridian Hotels and Northline Film Festival. Two to three engagements a
+            year, strategy through final art direction.
+          </p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2013 — 2016</div>
+        <div>
+          <h3>Design Lead — Foundry North</h3>
+          <p>
+            Led brand systems for food and hospitality clients; grew the design team from two to
+            five and introduced the studio's type and colour review process.
+          </p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2011 — 2013</div>
+        <div>
+          <h3>Designer — Field Office Studio</h3>
+          <p>
+            Editorial layout, packaging and campaign art direction for independent retailers across
+            the Pacific Northwest.
+          </p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2010 — 2011</div>
+        <div>
+          <h3>Junior Designer — Bindery Press</h3>
+          <p>Print production, book layout and prepress for a small independent press.</p>
+        </div>
+      </div>
+
+      <div class="cols">
+        <div>
+          <h2>Capabilities</h2>
+          <ul>
+            <li>Brand strategy, naming and positioning</li>
+            <li>Identity systems and design standards</li>
+            <li>Packaging, print and editorial</li>
+            <li>Product and interface design</li>
+            <li>3D and motion direction</li>
+            <li>Art direction and photography</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Selected recognition</h2>
+          <ul>
+            <li>Awwwards Honorable Mention, 2025</li>
+            <li>Type Directors Club Certificate, 2024</li>
+            <li>Communication Arts Typography Annual, 2023</li>
+            <li>Portland Design Week exhibitor, 2023</li>
+            <li>D&amp;AD New Blood Pencil, 2022</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="when">2006 — 2010</div>
+        <div>
+          <h3>BFA, Graphic Design — Pacific Northwest College of Art</h3>
+          <p>Portland, OR. Thesis on vernacular signage in post-war commercial architecture.</p>
+        </div>
+      </div>
+
+      <h2>Tools</h2>
+      <div class="chips">
+        <span class="chip">Figma</span>
+        <span class="chip">Illustrator</span>
+        <span class="chip">InDesign</span>
+        <span class="chip">Photoshop</span>
+        <span class="chip">After Effects</span>
+        <span class="chip">Cinema 4D</span>
+        <span class="chip">Redshift</span>
+        <span class="chip">Blender</span>
+        <span class="chip">Framer</span>
+      </div>
+
+      <footer>
+        <span>References available on request.</span>
+        <span>Portfolio: maravoss.studio</span>
+      </footer>
+    </main>
+    <div class="print">
+      <button type="button" onclick="window.print()">Print this résumé</button>
+    </div>
+  </body>
+</html>
